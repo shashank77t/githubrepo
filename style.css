@@ -1,0 +1,226 @@
+body {
+    padding: 20px;
+    background-color: #f8f9fa;
+  }
+  .line1{
+    display: flex;
+    
+  }
+  .fa-solid.fa-link{
+    margin-right: 10px;
+  }
+  .col1{
+    display: flex;
+  }
+  .fa-solid.fa-location-dot{
+    margin-left: 10px;
+  }
+  #header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+    color: #ffffff;
+  }
+  
+  #userImage {
+    border-radius: 50%;
+    margin-right: 20px;
+    width: 120px;
+    height: 120px;
+  }
+  .form-control::after{
+   display: none;
+   transform: scale(0);
+  }
+  #userInfo {
+    text-align: left;
+    color: #000000;
+    flex: 1;
+    margin-top: 10px;
+  }
+  
+  /* Search box on the right side, responsive */
+  .userid {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    width: 100%;
+    max-width: 240px;
+    border-radius: 18px;
+    border: 1px solid #dee2e6;
+    padding: 12px;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  /* Styles for other user information links */
+  .other-links-container {
+    margin-top: 10px;
+  }
+  
+  .other-link {
+    display: flex;
+    align-items: center;
+    color: #000000;
+    text-decoration: none;
+    margin-bottom: 5px;
+  }
+  
+  .other-link-icon {
+    margin-right: 5px;
+  }
+  
+  .other-link:hover {
+    text-decoration: underline;
+  }
+  
+  .repository-card {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .repository-card h5 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #007bff;
+  }
+  
+  .repository-card p {
+    color: #000000;
+    margin-bottom: 10px;
+  }
+  
+  /* Tags styles */
+  .repository-card .tags-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .repository-card .tag {
+    margin-right: 6px;
+    margin-bottom: 6px;
+    background-color: #2563a7;
+    color: #ffffff;
+    padding: 2px 4px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .repository-card .tag:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Pagination styles */
+  .pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .pagination {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+  }
+  
+  .pagination li {
+    margin-right: 5px;
+  }
+  
+  .page-link {
+    color: #007bff;
+  }
+  
+  .page-item.active .page-link {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  /* Previous and Next button styles */
+  .pagination-container button {
+    margin: 5px;
+    color: #007bff;
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    padding: 6px 12px;
+    cursor: pointer;
+  }
+  
+  .pagination-container button:hover {
+    background-color: #007bff;
+    color: #ffffff;
+  }
+  
+  #loader {
+    margin-top: 20px;
+
+  }
+  .float{
+    display: flex;
+    justify-content: space-around;
+   
+  }
+  .float{
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  .fa-solid.fa-arrow-left{
+    font-size: 30px;
+  }
+  .fa-solid.fa-arrow-right{
+    font-size: 30px;
+  }
+  .abc1{
+    color: rgb(186, 176, 176);
+  }
+  .abc2{
+    color: #007bff;
+  }
+  #prevButton{
+      font-size: 20px;
+      border: 2px solid lightgray;
+      background: #ffffff;
+      width: 150px;
+      height: 40px;
+      border-radius: 10px;
+  }
+  /* Media Queries for responsiveness */
+  @media (max-width: 768px) {
+    #header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    #userImage {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    #userInfo {
+      text-align: center;
+      margin-top: 0;
+    }
+  
+    .userid {
+      position: static;
+      width: 100%;
+      max-width: 100%;
+      margin: 10px 0;
+    }
+  
+    .pagination-container button {
+      margin: 5px;
+    }
+  }
